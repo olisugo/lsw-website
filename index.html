@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix One</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+
+        $(document).ready(function() {
+            positionTitle();
+            $(".fade-in").fadeIn(2000);
+
+            $("img.down-arrow").on("click", function() {
+                window.scrollTo({
+                    top: window.innerHeight,
+                    left: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        function positionTitle() {
+            $("header").css("height", window.innerHeight - 160);
+        }
+
+        window.onresize = positionTitle;
+
+    </script>
+
+  </head>
+  <body>
+    <nav>
+        <img src="images/LSW-Logo.png" alt="L Stands for Winner studio logo." class="studio-logo">
+
+        <a href="https://lstandsforwinner.itch.io" target="_blank" rel="noopener noreferrer" title="Itch.io" class="icon"><img src="images/icons/itch-icon.svg" alt="Itch.io icon." class="icon" id="itch"></a>
+        <a href="https://twitter.com/LStands4Winner" target="_blank" rel="noopener noreferrer" title="Twitter (aka. X)" class="icon"><img src="images/icons/twitter-icon.png" alt="Twitter icon." class="icon" id="twitter"></a>
+        <a href="mailto:contact@lstandsforwinner.studio" class="icon" title="Send us an email"><img src="images/icons/mail-icon.png" alt="Email icon." class="icon" id="mail"></a>
+    </nav>
+
+    <header>
+
+        <div class="wrapper">
+            <img src="images/Logo-Text.png" alt="Phoenix One title with logo." class="main-logo fade-in" >
+        </div>
+    </header>
+
+    <div class="down-arrow">
+        <img src="images/icons/down-arrow.png" alt="Down arrow." class="down-arrow fade-in">
+    </div>
+
+    <section class="blurb fade-in">
+
+        <p class="blurb-large-text">Phoenix One is a side-scrolling 2D platformer set on an attacked spacecraft in the year 2164. Play as Astrid, a genetically engineered soldier, who must hastily traverse the wreckage of the Phoenix One, killing aliens blocking their path, all before the oxygen supply runs out. The game has puzzle-like elements, such as a unique ricochet mechanic, that you must learn to utilise and master under time pressure. Humanity is relying on Astrid to bring back sensitive information gathered by the Phoenix One that is crucial for our survival. Can you ensure the success of the Phoenix One?</p>
+
+        <h2>Play the demo now on <a href="https://lstandsforwinner.itch.io/phoenix-one-demo" target="_blank" rel="noopener noreferrer" title="Play the demo on Itch.io">Itch.io</a>!</h2>
+
+        <h1>Coming Soon for PC</h1>
+
+    </section>
+  </body>
+</html>
