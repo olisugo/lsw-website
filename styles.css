@@ -26,14 +26,37 @@ nav {
     padding: 0 20px;
 }
 
-/* a.icon {
-    display: block;
-} */
-
 img.icon {
     width: 25px;
     height: 25px;
     margin: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img.icon#twitter {
+    background-image: url("images/icons/twitter-icon.png");
+}
+img.icon#twitter:hover,
+img.icon#twitter:active {
+    background-image: url("images/icons/twitter-icon-blue.png");
+}
+
+img.icon#itch {
+    background-image: url("images/icons/itch-icon.png");
+}
+img.icon#itch:hover,
+img.icon#itch:active {
+    background-image: url("images/icons/itch-icon-red.png");
+}
+
+img.icon#mail {
+    background-image: url("images/icons/mail-icon.png");
+}
+img.icon#mail:hover,
+img.icon#mail:active {
+    background-image: url("images/icons/mail-icon-green.png");
 }
 
 img.studio-logo {
@@ -48,6 +71,7 @@ img.studio-logo {
 
 header {
     width: 100%;
+    height: calc(100vh - 160px);
 }
 
 div.wrapper {
@@ -76,6 +100,13 @@ div.down-arrow {
 img.down-arrow {
     width: 80px;
     height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("images/icons/down-arrow-white.png");
+}
+img.down-arrow:hover {
+    background-image: url("images/icons/down-arrow-grey.png");
 }
 
 
@@ -92,6 +123,10 @@ section.blurb h2 a:visited {
     text-align: center;
     margin: 50px 0;
     background-color: #14141c;
+}
+
+section.blurb h2 a:hover {
+    color: #bbbbbb;
 }
 
 section.blurb h1 {
