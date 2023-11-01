@@ -57,6 +57,16 @@ img.studio-logo {
     left: 20px;
     top: 0;
 }
+img.studio-logo:hover {
+    animation-name: logo-wiggle;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo-wiggle {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
 
 
 
@@ -128,7 +138,6 @@ section.blurb h2 a:hover {
 }
 
 section.blurb h1 {
-    font-family: 'Russo One', sans-serif;
     color: white;
     font-size: 50px;
     text-align: center;
