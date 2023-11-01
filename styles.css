@@ -26,38 +26,29 @@ nav {
     padding: 0 20px;
 }
 
-img.icon {
+a.icon {
+    display: block;
     width: 25px;
     height: 25px;
     margin: 10px;
-    background-size: contain;
-    background-position: center;
+    background-position: 0 0;
+    background-size: 25px 50px;
     background-repeat: no-repeat;
 }
-
-img.icon#twitter {
-    background-image: url("images/icons/twitter-icon.png");
-}
-img.icon#twitter:hover,
-img.icon#twitter:active {
-    background-image: url("images/icons/twitter-icon-blue.png");
+a.icon:hover {
+    background-position: 0 -25px;
 }
 
-img.icon#itch {
-    background-image: url("images/icons/itch-icon.png");
+a.icon#itch {
+    background-image: url("images/icons/itch.png");
 }
-img.icon#itch:hover,
-img.icon#itch:active {
-    background-image: url("images/icons/itch-icon-red.png");
+a.icon#twitter {
+    background-image: url("images/icons/twitter.png");
+}
+a.icon#mail {
+    background-image: url("images/icons/mail.png");
 }
 
-img.icon#mail {
-    background-image: url("images/icons/mail-icon.png");
-}
-img.icon#mail:hover,
-img.icon#mail:active {
-    background-image: url("images/icons/mail-icon-green.png");
-}
 
 img.studio-logo {
     width: 80px;
@@ -100,13 +91,13 @@ div.down-arrow {
 img.down-arrow {
     width: 80px;
     height: 80px;
-    background-size: contain;
-    background-position: center;
+    background-size: 80px 160px;
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-image: url("images/icons/down-arrow-white.png");
+    background-image: url("images/icons/down-arrow.png");
 }
 img.down-arrow:hover {
-    background-image: url("images/icons/down-arrow-grey.png");
+    background-position: 0 -80px;
 }
 
 
